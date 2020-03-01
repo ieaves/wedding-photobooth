@@ -53,7 +53,7 @@ class UI {
   drawInitial() {
     let title = createDOMElement(
       `<div class="initial bigtext shadow">
-         Leave a video message for John and Emily!<br/>(use the lightbulbs to draw in the air)
+         Leave a video message for Ian and Kaitlin!<br/>(use the lightbulbs to draw in the air)
       </div>`
     );
     let start = createDOMElement(
@@ -90,7 +90,7 @@ class UI {
         </label>
         <br/>
         <label class="text-entry shadow bigtext" id="note-label">
-          Note to John and Emily:<br/>
+          Note to Ian and Kaitlin:<br/>
           <input class="text-entry" type="text" id="note-input" name="note"/>
         </label>
         <div class="bigtext shadow text-entry" style="margin-top: 200px"">Press ENTER to continue</div>
@@ -112,7 +112,7 @@ class UI {
   }  
   
   drawFinal() {
-    let finalText = createDOMElement(`<div class="bigtext shadow final">Thank you!<br/>Your video will be sent to John and Emily</div>`);
+    let finalText = createDOMElement(`<div class="bigtext shadow final">Thank you!<br/>Your video will be sent to Ian and Kaitlin</div>`);
     document.body.appendChild(finalText);
   }
   
@@ -121,7 +121,6 @@ class UI {
     this.destroyCountdown();
     this.drawRecording();
     this.recorder = new Recorder(document.querySelector(".p5Canvas"), this.onFinishRecording.bind(this));
-    // issue is with document.querySelector(".p5Canvas"), doesn't seem to be releasing
     this.recorder.startRecording();
     this.runTimer();  // this is the thing that stops the recording
   }
