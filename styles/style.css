@@ -1,0 +1,99 @@
+@import url("fonts.css");
+@import url("glow.css");
+
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.demo-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+video {
+  display: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    margin: 0;
+    z-index: -1;
+}
+
+.shadow {
+    /* TODO better color maybe */
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.bigtext {
+  color: white;
+  font-size: 90px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 700;
+  text-align: center;
+}
+
+input.text-entry {
+  font-size: 90px;
+  font-family: 'Comfortaa';
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+form {
+  text-align: center;
+  margin-top: 200px;
+}
+
+input[type=text] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus{
+  box-shadow: 0 0 100px rgba(230, 230, 230, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 5px solid rgba(230, 230, 230, 1);
+}
+
+.countdown {
+  text-align: center;
+  margin-top: 400px;
+}
+
+.countdown span {
+  font-family: 'Segment7';
+  font-size: 200px;
+  color: white;
+  margin-right: 150px;
+  opacity: 0.5;
+}
+
+.countdown span.active {
+  opacity: 1;
+  text-shadow: 0 0 60px rgb(239, 62, 74);
+}
+
+#timer {
+  font-family: 'Segment7';
+  font-size: 100px;
+  color: white;
+}
+
+.final {
+  margin-top: 400px;
+}
